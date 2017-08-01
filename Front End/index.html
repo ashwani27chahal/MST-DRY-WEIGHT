@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<HTML lang="en">
+
+    <HEAD>
+        <meta charset="UTF-8">
+        <TITLE>MST DRY Weight Lookup</TITLE>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="#">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </HEAD>
+
+    <BODY>
+        <nav class="navbar navbar-inverse">
+            <p id = "contactUs">Contact us: <a href="mailto:Chollingshea@micron.com?Subject=MST%20Dry%20Weight%20Reporting%20-Web%20Tool" target="_top"><strong><u>Chollingshea@micron.com</u></strong></a></p>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <p id = "pageHeading"><a class="navbar-brand" href="#"></a>
+                        <img src="https://www.micron.com/~/media/track-3-images/new-images/about/media-relations/650x180_micronlogo.png?la=en" class="img-thumbnail" alt="Micron Logo" width="200" height="200"> <br>
+                         SQRA - MST Dry Weight Lookup
+                    </p>
+                </div>
+				<table class="table" id = "stripe">
+					<thead>
+						<tr>
+							<th></th>
+						</tr>
+					</thead>
+            	</table>
+            </div>
+        </nav>
+
+        <div class="container" id = "main">			
+			<table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+            </table>
+            <h2>Input Design IDs </h2>
+            <p>Please provide a Design ID and click Submit/press Enter</p>
+            <p><strong>Note:</strong><i><u>Please click reset before changing the selection criteria.</u></i> </p><br><br>
+            
+            <div>
+                <input type="text" name="designID" id = "entryBox" placeholder="Enter a Design ID here" width="500px" height="200px">
+                <button class="button1" id="submitButton">Submit</button>
+                <button class="button2" id="ClearResults">Reset</button>  
+            </div>
+            <br> <br>
+            
+            <div class="row" >
+                
+                <div class="col-md-4">
+                    <select id="DieInPackage">
+                        <option value="" disabled selected>Select No Die in PKG</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-4">
+                    <select id="PackageType">
+                        <option value="" disabled selected>Select Package Type</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-4">
+                    <select id="LeadCount">
+                        <option value="" disabled selected>Select Lead Count</option>
+                    </select>
+                </div>
+                
+            </div>        
+            
+
+            <div class="row" id="loadingIndicator">
+                <div class="col-md-2 col-md-offset-5">
+                    <img src="loading.gif" width="150">
+                    <p>Fetching results..</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="demotable">
+            <div id = "answer">
+                <b>Reportable MST Dry Weight Value is:</b> 
+                <input type="text" name="reportedValue" id = "resultBox" placeholder="Average MST Dry Weight" width="500px" height="200px">
+            </div>
+            <h2>Result Table</h2>
+            <p>Below is the resultsheet for the given Design ID</p>            
+            <table class="table table-bordered table-hover" id="ResultTable">
+                <thead>
+                    <tr>
+                        <th>Design ID</th>
+						<th>No Die in PKG</th>
+						<th>Package Type</th>
+                        <th>Lead Count</th>
+                        <th>MST Dry Weight</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </BODY>
+    
+</HTML>
