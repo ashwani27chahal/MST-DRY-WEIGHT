@@ -84,3 +84,20 @@ select {
     padding-top: 60px;
     text-align: center
 }
+
+#resultBox {
+    font-size: 15px;
+    font-weight: 700
+}
+
+#msLink{
+    float: right;
+}
+
+#teraLink{
+    float: right;
+}
+
+#expandLink{
+    float: right;
+}

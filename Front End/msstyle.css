@@ -1,0 +1,99 @@
+#contactUs {
+    color: white; 
+    float:right; 
+    padding-right: 20px;
+}
+
+.navbar-header {
+    float:left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-brand {
+    float:none;
+}
+
+#pageHeading {
+    color:white;
+    font-weight: 600;
+    font-size: 25px  
+}
+
+#demotable{
+	display:none;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid green;
+    border-radius: 8px;
+    width: 100px;
+}
+
+
+.button1:hover {
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid red;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.button2:hover {
+    background-color: red;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+}
+
+#loadingIndicator{
+    display:none;
+}
+
+th {
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+}
+
+#stripe th {
+	background-color:dimgray
+}
+
+#buttons {
+    padding-top: 30px
+}
+
+select {
+    border: 2px solid darkblue;
+    color: dimgrey;
+    font-weight: 600      
+}
+
+#answer {
+    padding-top: 60px;
+    text-align: center
+}
+
+#resultBox {
+    font-size: 15px;
+    font-weight: 700
+}
+
+#msLink{
+    float: right;
+}
+
+#teraLink{
+    float: right;
+}

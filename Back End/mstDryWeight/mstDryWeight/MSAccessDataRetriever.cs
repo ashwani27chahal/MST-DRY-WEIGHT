@@ -42,7 +42,7 @@ namespace mstDryWeight
             {
                 var queryData = new DataTable();
                 var command = new OleDbCommand(query, con);
-                command.CommandTimeout = 120;
+                command.CommandTimeout = 600;
                 var adapter = new OleDbDataAdapter(command);
                 adapter.Fill(queryData);
 

@@ -63,7 +63,7 @@ namespace mstDryWeight
             {
                 var queryData = new DataTable();
                 var command = new TdCommand(query, con);
-                command.CommandTimeout = 120;
+                command.CommandTimeout = 600;
                 var adapter = new TdDataAdapter(command);
                 adapter.Fill(queryData);
 
